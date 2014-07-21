@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Channelkit",
+  "version": "0.0.1",
+
+  "description": "Organize links, articles, places, books or anything on the web into neat channels for personal or public use.",
+
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+
+  "browser_action": {
+    "default_title": "Channelkit",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "19": "icon19.png",
+      "38": "icon38.png"
+    }
+  },
+
+  "permissions": [
+    "tabs"
+  ]
+}
