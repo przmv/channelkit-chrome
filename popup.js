@@ -15,8 +15,10 @@
     if (message === "close") {
       window.close();
     }
-    if (message.hasOwnProperty("status") && message.status === "saved") {
-      window.close();
+    if (message.hasOwnProperty("status")) {
+      if (message.status === "saved" || message.status === "updated") {
+        window.close();
+      }
     }
   }, false);
 })();
