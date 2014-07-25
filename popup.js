@@ -17,7 +17,10 @@
     }
     if (message.hasOwnProperty("status")) {
       if (message.status === "saved" || message.status === "updated") {
-        window.close();
+        // Wait for some time to complete request
+        window.setTimeout(function() {
+          window.close();
+        }, 250);
       }
     }
   }, false);
